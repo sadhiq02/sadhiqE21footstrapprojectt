@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+<style>
+.c-item{
+  height: calc(100vh-100px);
+}
+  .c-image{
+    height: 600px;
+    object-fit: cover;
+  }
+  .img-fluid{
+    height: 500px;
+    object-fit: cover;
+  margin: 1%;
+  }
+</style>
+</head>
+<body>
+  <!--nav-bar-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">SaDO</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="https://www.google.com/search?q=oneplus+new+model+2023&rlz=1C1OKWM_enAE971AE971&sxsrf=AB5stBgLlI-1-B4Gb1OtvDK8qk0Fmvfl6w%3A1691329694350&ei=nqTPZNj2FPCIkdUP4_up2Ac&ved=0ahUKEwjYvYSNlsiAAxVwRKQEHeN9CnsQ4dUDCA8&uact=5&oq=oneplus+new+model+2023&gs_lp=Egxnd3Mtd2l6LXNlcnAiFm9uZXBsdXMgbmV3IG1vZGVsIDIwMjMyBxAjGIoFGCcyBRAAGIAEMgUQABiABDIFEAAYgAQyBhAAGAcYHjIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHjIFEAAYgAQyBRAAGIAESI0eUIwIWIsVcAJ4AZABAJgB5gKgAcoOqgEFMi01LjK4AQPIAQD4AQHCAgoQABhHGNYEGLADwgIKEAAYigUYsAMYQ8ICCBAAGAUYBxgewgIGEAAYCBge4gMEGAAgQYgGAZAGCg&sclient=gws-wiz-serp" target="_blank">Home</a>
+                              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.google.com/search?q=oneplus+new+model+2023&rlz=1C1OKWM_enAE971AE971&sxsrf=AB5stBgLlI-1-B4Gb1OtvDK8qk0Fmvfl6w%3A1691329694350&ei=nqTPZNj2FPCIkdUP4_up2Ac&ved=0ahUKEwjYvYSNlsiAAxVwRKQEHeN9CnsQ4dUDCA8&uact=5&oq=oneplus+new+model+2023&gs_lp=Egxnd3Mtd2l6LXNlcnAiFm9uZXBsdXMgbmV3IG1vZGVsIDIwMjMyBxAjGIoFGCcyBRAAGIAEMgUQABiABDIFEAAYgAQyBhAAGAcYHjIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHjIFEAAYgAQyBRAAGIAESI0eUIwIWIsVcAJ4AZABAJgB5gKgAcoOqgEFMi01LjK4AQPIAQD4AQHCAgoQABhHGNYEGLADwgIKEAAYigUYsAMYQ8ICCBAAGAUYBxgewgIGEAAYCBge4gMEGAAgQYgGAZAGCg&sclient=gws-wiz-serp" target="_blank">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Brands
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="https://www.google.com/search?q=iphone+new+model+2023&rlz=1C1OKWM_enAE971AE971&sxsrf=AB5stBjM7TQKJs7k40KCWldTvE29WEpE_A%3A1691329454057&ei=rqPPZPH6AtrrkdUPwNSZ2Ak&ved=0ahUKEwjxibqalciAAxXadaQEHUBqBpsQ4dUDCA8&uact=5&oq=iphone+new+model+2023&gs_lp=Egxnd3Mtd2l6LXNlcnAiFWlwaG9uZSBuZXcgbW9kZWwgMjAyMzIFEAAYgAQyBRAAGIAEMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgARIyj1Q7w9Yhx9wAngAkAEBmAGlA6ABhhGqAQkwLjEuMS40LjG4AQPIAQD4AQHCAgoQABhHGNYEGLADwgIKEAAYigUYsAMYQ8ICBxAAGA0YgATiAwQYACBBiAYBkAYK&sclient=gws-wiz-serp" target="_blank">Iphone</a></li>
+                  <li><a class="dropdown-item" href="https://www.google.com/search?q=oneplus+new+model+2023&rlz=1C1OKWM_enAE971AE971&sxsrf=AB5stBghX2ted6uSb_zGk7lkD34K26x-dg%3A1691329417658&ei=iaPPZO3WJ7eckdUPkIuP0A0&oq=oneplus+new+model&gs_lp=Egxnd3Mtd2l6LXNlcnAiEW9uZXBsdXMgbmV3IG1vZGVsKgIIADIKEAAYRxjWBBiwAzIKEAAYRxjWBBiwAzIKEAAYRxjWBBiwAzIKEAAYRxjWBBiwAzIKEAAYRxjWBBiwAzIKEAAYRxjWBBiwAzIKEAAYRxjWBBiwAzIKEAAYRxjWBBiwAzIKEAAYigUYsAMYQzIKEAAYigUYsAMYQ0imDlAAWABwAXgAkAEAmAHUA6AB1AOqAQM0LTG4AQHIAQDiAwQYACBBiAYBkAYK&sclient=gws-wiz-serp" target="_blank">Oppo Reno</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="https://www.google.com/search?q=oneplus+new+model+2023&rlz=1C1OKWM_enAE971AE971&sxsrf=AB5stBgLlI-1-B4Gb1OtvDK8qk0Fmvfl6w%3A1691329694350&ei=nqTPZNj2FPCIkdUP4_up2Ac&ved=0ahUKEwjYvYSNlsiAAxVwRKQEHeN9CnsQ4dUDCA8&uact=5&oq=oneplus+new+model+2023&gs_lp=Egxnd3Mtd2l6LXNlcnAiFm9uZXBsdXMgbmV3IG1vZGVsIDIwMjMyBxAjGIoFGCcyBRAAGIAEMgUQABiABDIFEAAYgAQyBhAAGAcYHjIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHjIFEAAYgAQyBRAAGIAESI0eUIwIWIsVcAJ4AZABAJgB5gKgAcoOqgEFMi01LjK4AQPIAQD4AQHCAgoQABhHGNYEGLADwgIKEAAYigUYsAMYQ8ICCBAAGAUYBxgewgIGEAAYCBge4gMEGAAgQYgGAZAGCg&sclient=gws-wiz-serp" target="_blank">One plus</a></li>
+                  
+                </ul>
+              </li>
+            
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./bootstrappro2.html" target="_blank">Sign-Up</a>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+    </nav>
+<!--carousal-->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item c-item active">
+          <img src="./9189992uw0pAqxq.jpg" class="d-block w-100 c-image" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>First look</h5>
+            <p>upcoming</p>
+          </div>
+        </div>
+        <div class="carousel-item c-item">
+          <img src="./Apple-Foldable.png" class="d-block w-100 c-image" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Apple</h5>
+            <p>New model.</p>
+          </div>
+        </div>
+        <div class="carousel-item c-item">
+          <img src="./Huawei-mate-pro-30-top.jpg" class="d-block w-100 c-image" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Huawei</h5>
+            <p>Great camara</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+<!--hero-->
+<section id="intro">
+<div class="container-lg">
+<div class="row justify-content-center align-items-center">
+<div class="col-md-14 text-center text-md-start">
+  <h1>
+<div class="display-2 " link="#">Great Offers</div>
+<div class="display-5 text-muted text-fluid">"Catch your dreams in one touch" </div>
+  <div class="display-6 text-muted text-fluid"> The expansion of mobile internet consumption is an opportunity for traditional publishers and broadcasters, as much as a threat. Traditional media has invested heavily in online brand extensions, and some of them have larger audiences online than they ever had for the offline products.
+  </h1>
+<!--img-->
+<span data-bs-toggle="tooltip" data-bs-placement="bottom" title="A new phone is like a new chapter">
+  <img class="img-fluid"  src="https://i.ytimg.com/vi/gYfV4XXfYtI/maxresdefault.jpg" alt="new phone"/></span>
+</div>
+</div>
+</div>
+</section>
+<!-- Button trigger modal -->
+<div class="row justify-content-center align-items-center">
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+  Upcoming phones
+</button>
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Latest phone news for new launches
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Notification</button>
+        <button type="button" class="btn btn-primary">Subscribe</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        Smart Cameras
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>In 2015, Qualcomm demoed a camera that showed it was capable of identify the objects it was looking at. The system works by comparing real world objects to a huge reference database stored on the device. Best of all, it’s possible to train the software to understand ever more things. Sort of like a little baby A.I. <code>.accordion-body</code>, though the transition does limit overflow.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        Innovative Medical Apps
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>Recently, scientists developed an app called Athelas which makes use of a lens attachment to track malaria and cancerous cells as they move through a patient’s blood. This innovation has prompted scientists to look for other ways that smartphones could be used to track highly infectious diseases, such as Ebola, to gain a better understanding of how they move and spread. <code>.accordion-body</code>, though the transition does limit overflow.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        Pressure-Sensitive Screens
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>The Force Touch on the Apple Watch has demonstrated that companies already have the ability to manufacture screens that are capable of sensing pressure. Controls that can distinguish between a light tap from a firm press will give users even more ways to manipulate their phones and has obvious benefits for the gaming community. <code>.accordion-body</code>, though the transition does limit overflow.
+      </div>
+    </div>
+  </div>
+</div>
+<!--CARDS-->
+<section id="Pricing" class="bg-dark my-0">
+  <div class="text-center ">
+    <h2 class="lead tw-bold text-white">Prcing Plans</h2>
+
+    <a href="https://www.google.com/search?q=oneplus+new+model+2023&rlz=1C1OKWM_enAE971AE971&sxsrf=AB5stBgLlI-1-B4Gb1OtvDK8qk0Fmvfl6w%3A1691329694350&ei=nqTPZNj2FPCIkdUP4_up2Ac&ved=0ahUKEwjYvYSNlsiAAxVwRKQEHeN9CnsQ4dUDCA8&uact=5&oq=oneplus+new+model+2023&gs_lp=Egxnd3Mtd2l6LXNlcnAiFm9uZXBsdXMgbmV3IG1vZGVsIDIwMjMyBxAjGIoFGCcyBRAAGIAEMgUQABiABDIFEAAYgAQyBhAAGAcYHjIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHjIFEAAYgAQyBRAAGIAESI0eUIwIWIsVcAJ4AZABAJgB5gKgAcoOqgEFMi01LjK4AQPIAQD4AQHCAgoQABhHGNYEGLADwgIKEAAYigUYsAMYQ8ICCBAAGAUYBxgewgIGEAAYCBge4gMEGAAgQYgGAZAGCg&sclient=gws-wiz-serp"><p class="lead text-white my-0">Select your suitable plans here</p></a>
+    <p class="lead text-white fs-6 md-1">Mobile is such a different experience compared with desktop. The screen is different, the technology is vastly more powerful; and the data is more powerful, because it is based on location</p></section>
+  </div> 
+  <div class="row my-0 align-iyems-center justify-content-center g=0">
+</div>
+    <div class="card-group">
+    <div class="card">
+            <img src="./iphone.jpeg"  class="card-img-top" alt="cards">
+      <div class="card-body">
+       <a href="https://www.google.com/search?q=iphone+new+model+2023&rlz=1C1OKWM_enAE971AE971&sxsrf=AB5stBjM7TQKJs7k40KCWldTvE29WEpE_A%3A1691329454057&ei=rqPPZPH6AtrrkdUPwNSZ2Ak&ved=0ahUKEwjxibqalciAAxXadaQEHUBqBpsQ4dUDCA8&uact=5&oq=iphone+new+model+2023&gs_lp=Egxnd3Mtd2l6LXNlcnAiFWlwaG9uZSBuZXcgbW9kZWwgMjAyMzIFEAAYgAQyBRAAGIAEMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgARIyj1Q7w9Yhx9wAngAkAEBmAGlA6ABhhGqAQkwLjEuMS40LjG4AQPIAQD4AQHCAgoQABhHGNYEGLADwgIKEAAYigUYsAMYQ8ICBxAAGA0YgATiAwQYACBBiAYBkAYK&sclient=gws-wiz-serp"> <h5 class="card-title">IPhone</h5></a>
+        <p class="card-text">iPhone is a line of smartphones produced by Apple Inc. that use Apple's own iOS mobile operating system.more than 2.2 billion iPhones had been sold. As of 2022, the iPhone accounts for 15.6% of global smartphone market share.</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="./mobile-2.jpeg" class="card-img-top" alt="...">
+      <div class="card-body">
+       <a href="https://www.google.com/search?q=oneplus+new+model+2023&rlz=1C1OKWM_enAE971AE971&sxsrf=AB5stBghX2ted6uSb_zGk7lkD34K26x-dg%3A1691329417658&ei=iaPPZO3WJ7eckdUPkIuP0A0&oq=oneplus+new+model&gs_lp=Egxnd3Mtd2l6LXNlcnAiEW9uZXBsdXMgbmV3IG1vZGVsKgIIADIKEAAYRxjWBBiwAzIKEAAYRxjWBBiwAzIKEAAYRxjWBBiwAzIKEAAYRxjWBBiwAzIKEAAYRxjWBBiwAzIKEAAYRxjWBBiwAzIKEAAYRxjWBBiwAzIKEAAYRxjWBBiwAzIKEAAYigUYsAMYQzIKEAAYigUYsAMYQ0imDlAAWABwAXgAkAEAmAHUA6AB1AOqAQM0LTG4AQHIAQDiAwQYACBBiAYBkAYK&sclient=gws-wiz-serp"> <h5 class="card-title">OPPO</h5></a>
+        <p class="card-text">Oppo Reno is a line of camera-focused Android smartphones manufactured by Oppo, with Reno 10x Zoom, and Reno 5G as "flagships", and midrange models, the Reno Z and Reno..</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="./one.webp" class="card-img-top" alt="...">
+      <div class="card-body">
+        <a href="https://www.google.com/search?q=oneplus+new+model+2023&rlz=1C1OKWM_enAE971AE971&sxsrf=AB5stBgLlI-1-B4Gb1OtvDK8qk0Fmvfl6w%3A1691329694350&ei=nqTPZNj2FPCIkdUP4_up2Ac&ved=0ahUKEwjYvYSNlsiAAxVwRKQEHeN9CnsQ4dUDCA8&uact=5&oq=oneplus+new+model+2023&gs_lp=Egxnd3Mtd2l6LXNlcnAiFm9uZXBsdXMgbmV3IG1vZGVsIDIwMjMyBxAjGIoFGCcyBRAAGIAEMgUQABiABDIFEAAYgAQyBhAAGAcYHjIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHjIFEAAYgAQyBRAAGIAESI0eUIwIWIsVcAJ4AZABAJgB5gKgAcoOqgEFMi01LjK4AQPIAQD4AQHCAgoQABhHGNYEGLADwgIKEAAYigUYsAMYQ8ICCBAAGAUYBxgewgIGEAAYCBge4gMEGAAgQYgGAZAGCg&sclient=gws-wiz-serp"><h5 class="card-title">One Plus</h5></a>
+        <p class="card-text">OnePlus 11 5G; OnePlus Nord 3 5G; OnePlus Nord CE 3 Lite 5G; OnePlus Nord N20 SE; OnePlus 10T 5G; OnePlus 10 Pro 5G; .</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+  </div>
+  <div class="offcanvas offcanvas-start show" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasLabel">Special Features</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      Latest Offers ; 40% OFF · Iphone, Samsung,Huawei, Nokia, One plus 2,703.75. AED 2,814.00 ; 27% OFF · 1,379.00. AED 1,899.00 ; 8% OFF · 2,399.00. AED 2,599.00 ; New. 45% OFF · 1,099.00. AED 1,999.00 ; 20% OFF.
+    </div>
+  </div>
+  <section>
+  <div class="modal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Get free delivery with in 24 hr</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>free shipping within 24 hr for all locations and 50 % off in one year warranty.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Next time</button>
+          <button type="button" class="btn btn-primary">Place order</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</section>
+<!--review-->
+<div class="row justify-content-center bg-black text-white my-0">Customer reviews
+
+</div>
+<div class="row justify-content-center">
+  <div class="col-lg-8 ">
+    <div class="list-group">
+      <div class="list-group-item py-3">
+        <div class="pb-2">
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+            </svg>
+        </div>
+        </div>
+        <h5 class="mb-1">APPLE</h5>
+        <p class="mb-1">
+          100 % ORGINAL FULLY SATISFIED FAST DELIVERY
+        </p>
+        <small> Review by sadhiq</small>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+<div class="row justify-content-center">
+  <div class="col-lg-8 ">
+    <div class="list-group">
+      <div class="list-group-item py-3">
+        <div class="pb-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-half" viewBox="0 0 16 16">
+            <path d="M5.354 5.119 7.538.792A.516.516 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.537.537 0 0 1 16 6.32a.548.548 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.52.52 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.58.58 0 0 1 .085-.302.513.513 0 0 1 .37-.245l4.898-.696zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.565.565 0 0 1 .162-.505l2.907-2.77-4.052-.576a.525.525 0 0 1-.393-.288L8.001 2.223 8 2.226v9.8z"/>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-half" viewBox="0 0 16 16">
+            <path d="M5.354 5.119 7.538.792A.516.516 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.537.537 0 0 1 16 6.32a.548.548 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.52.52 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.58.58 0 0 1 .085-.302.513.513 0 0 1 .37-.245l4.898-.696zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.565.565 0 0 1 .162-.505l2.907-2.77-4.052-.576a.525.525 0 0 1-.393-.288L8.001 2.223 8 2.226v9.8z"/>
+          </svg>
+
+        <h5 class="mb-1"> I phone 14pro max</h5>
+        <p class="mb-1">
+          I really don’t how i can know if the device is middle east or other !!
+        </p>
+        <small> Review by Arun</small>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="row justify-content-center">
+  <div class="col-lg-8 ">
+    <div class="list-group">
+      <div class="list-group-item py-3">
+        <div class="pb-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-half" viewBox="0 0 16 16">
+            <path d="M5.354 5.119 7.538.792A.516.516 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.537.537 0 0 1 16 6.32a.548.548 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.52.52 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.58.58 0 0 1 .085-.302.513.513 0 0 1 .37-.245l4.898-.696zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.565.565 0 0 1 .162-.505l2.907-2.77-4.052-.576a.525.525 0 0 1-.393-.288L8.001 2.223 8 2.226v9.8z"/>
+          </svg>
+        <h5 class="mb-1"> Reviews</h5>
+        <p class="mb-1">
+          I was really worried to order online. Did a lot of research and enquiries. But finally I'm 100%Satisfied with the seller and Noon service. Thank you. 
+        </p>
+        <small> Review by Nisha</small>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+      </div>
+      </section>
+        <div class="list-group">
+          <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+            The current link item
+          </a>
+          <a href="#" class="list-group-item list-group-item-action">A second link item</a>
+          <a href="#" class="list-group-item list-group-item-action">A third link item</a>
+          <a href="#" class="list-group-item list-group-item-action">A fourth link item</a>
+          <a class="list-group-item list-group-item-action disabled" aria-disabled="true">A disabled link item</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--footer-->
+
+<section class="bg-dark">
+  <div class="container">
+    <div class="text-center">
+      <h2 class="text-light">Real World Experience</h2>
+      <p class="lead text-bg-light">Keep up-to-date with the latest and the best smartphones, loaded with newest features by shopping at Sharaf DG and get the best mobile price in UAE as your reward. Check some new launch smartphones – iPhone 14 | iPhone 14 Pro | Oppo Reno8 5G | Oppo Reno8 Pro | Samsung Galaxy Z Fold 4</p>
+    </div>
+  </div>
+  <div class="row justify-content-center">
+    <div class="col-md-8 text-center">
+      <p class="text-light my-4">
+        Here are the latest smartphone models globally, sorted by popularity. You can also find new launched smartphone models by sorting the list using the Latest option. Sort the list of smartphone by price in India, by using the High Price or Low Price options. With the filters on the left, you can also find the best smartphones in India for your requirements.
+      </p>
+      <button class="btn btn-primary" data-bs-toggle="modal"data-bs-target="#reg-modal">Register for updates</button>
+      
+  <p class="text-light">&copy;2023 SaDO Group | All Rights Reserved</p>
+</div>
+</footer>
+</div>
+</div>
+
+</div></section>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script>
+      var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl)
+})
+    </script>
+
+     
+</body>
+</html>
